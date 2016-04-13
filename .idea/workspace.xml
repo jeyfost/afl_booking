@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ebb5b4e9-99bb-4d31-a994-a7bd15d71e5c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
+    <ignored path="booking.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="booking" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="129" column="62" selection-start-line="129" selection-start-column="62" selection-end-line="129" selection-end-column="62" />
+              <folding>
+                <marker date="1460229875187" expanded="true" signature="297:366" placeholder="SELECT COUNT... schedule" />
+                <marker date="1460229875187" expanded="true" signature="1475:1496" placeholder="SELECT date " />
+                <marker date="1460229875187" expanded="true" signature="1613:1637" placeholder="UPDATE date " />
+                <marker date="1460229875187" expanded="true" signature="1613:1657" placeholder="UPDATE date " />
+                <marker date="1460229875187" expanded="true" signature="1685:1710" placeholder="DELETE FROM " />
+                <marker date="1460229875187" expanded="true" signature="1685:1728" placeholder="DELETE FROM " />
+                <marker date="1460229875187" expanded="true" signature="1774:1796" placeholder="SELECT * FRO... schedule" />
+                <marker date="1460229875187" expanded="true" signature="1774:1798" placeholder="SELECT * FRO... schedule" />
+                <marker date="1460229875187" expanded="true" signature="2036:2126" placeholder="INSERT INTO schedule_temp... " />
+                <marker date="1460229875187" expanded="true" signature="2036:2251" placeholder="INSERT INTO schedule_temp... " />
+                <marker date="1460229875187" expanded="true" signature="2036:2264" placeholder="INSERT INTO schedule_temp... " />
+                <marker date="1460229875187" expanded="true" signature="2036:2308" placeholder="INSERT INTO schedule_temp... " />
+                <marker date="1460229875187" expanded="true" signature="2036:2339" placeholder="INSERT INTO schedule_temp... " />
+                <marker date="1460229875187" expanded="true" signature="2622:2925" placeholder="INSERT INTO schedule_temp... " />
+                <marker date="1460229875187" expanded="true" signature="4663:4746" placeholder="SELECT * FRO... schedule_temp" />
+                <marker date="1460229875187" expanded="true" signature="4663:4774" placeholder="SELECT * FRO... schedule_temp" />
+                <marker date="1460229875187" expanded="true" signature="5313:5377" placeholder="SELECT * FRO... airports" />
+                <marker date="1460229875187" expanded="true" signature="5498:5560" placeholder="SELECT * FRO... airports" />
+                <marker date="1460229875187" expanded="true" signature="6845:7728" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajaxGenerateFlight.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/ajaxGenerateFlight.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="334" column="6" selection-start-line="334" selection-start-column="6" selection-end-line="334" selection-end-column="6" />
+              <folding>
+                <marker date="1460476533480" expanded="true" signature="243:322" placeholder="SELECT * FRO... schedule_temp" />
+                <marker date="1460476533480" expanded="true" signature="379:503" placeholder="SELECT * FRO... schedule_temp" />
+                <marker date="1460476533480" expanded="true" signature="656:708" placeholder="SELECT * FRO... schedule_temp" />
+                <marker date="1460476533480" expanded="true" signature="765:861" placeholder="SELECT * FRO... schedule_temp" />
+                <marker date="1460476533480" expanded="true" signature="765:862" placeholder="SELECT * FRO... schedule_temp" />
+                <marker date="1460476533480" expanded="true" signature="765:863" placeholder="SELECT * FRO... schedule_temp" />
+                <marker date="1460476533480" expanded="true" signature="1398:1410" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="1398:1462" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="1539:1551" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="1712:1754" placeholder="SELECT * FRO... airports" />
+                <marker date="1460476533480" expanded="true" signature="1845:1905" placeholder="SELECT * FRO... airports" />
+                <marker date="1460476533480" expanded="false" signature="10607:10646" placeholder="..." />
+                <marker date="1460476533480" expanded="false" signature="10673:10690" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="10720:12090" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="10754:11164" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="11181:12073" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="12112:12123" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="12112:12141" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="12160:12245" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="12160:12247" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="12160:12248" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="12160:12250" placeholder="..." />
+                <marker date="1460476533480" expanded="true" signature="12160:12349" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajaxGetWeather.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/ajaxGetWeather.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="182" selection-start-line="52" selection-start-column="182" selection-end-line="52" selection-end-column="182" />
+              <folding>
+                <marker date="1460477173368" expanded="true" signature="1201:1229" placeholder="SELECT * FRO... airports" />
+                <marker date="1460477173368" expanded="true" signature="1201:1257" placeholder="SELECT * FRO... airports" />
+                <marker date="1460477173368" expanded="true" signature="1428:1584" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1428:1696" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1428:1758" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1428:1793" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1556:1571" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1662:1676" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1829:1846" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1829:1866" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1829:1903" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1829:1970" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1829:2038" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1829:2159" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1829:2160" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1829:2181" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1829:2235" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="1829:2289" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="2000:2015" placeholder="..." />
+                <marker date="1460477173368" expanded="true" signature="2130:2144" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="95" column="1004" selection-start-line="95" selection-start-column="1004" selection-end-line="95" selection-end-column="1004" />
+              <folding>
+                <marker date="1460476129185" expanded="true" signature="2594:2612" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="3133:3182" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="3248:3299" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="3349:3400" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="3455:3506" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="3552:3603" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="3648:3699" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="3749:3800" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="3845:3896" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="3949:4000" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="4016:4028" placeholder="..." />
+                <marker date="1460476129185" expanded="true" signature="4106:4118" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajaxSortByType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/ajaxSortByType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+              <folding>
+                <marker date="1460229611556" expanded="true" signature="246:360" placeholder="SELECT * FRO... schedule_temp" />
+                <marker date="1460229611556" expanded="true" signature="411:486" placeholder="SELECT * FRO... schedule_temp" />
+                <marker date="1460229611556" expanded="true" signature="852:916" placeholder="SELECT * FRO... airports" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6914446">
+              <caret line="26" column="101" selection-start-line="26" selection-start-column="101" selection-end-line="26" selection-end-column="101" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scripts/config.php" />
+        <option value="$PROJECT_DIR$/scripts/connect.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/scripts/functions.php" />
+        <option value="$PROJECT_DIR$/scripts/ajaxPagesDepArr.php" />
+        <option value="$PROJECT_DIR$/scripts/ajaxPages.php" />
+        <option value="$PROJECT_DIR$/scripts/ajaxArrivalICAO.php" />
+        <option value="$PROJECT_DIR$/scripts/ajaxICAO.php" />
+        <option value="$PROJECT_DIR$/scripts/ajaxSortByType.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/functions.js" />
+        <option value="$PROJECT_DIR$/scripts/ajaxGenerateFlight.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/scripts/ajaxGetWeather.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="booking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="booking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="booking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="booking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="booking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="booking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="booking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="booking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="booking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WebServers\home\test1.ru\www\booking\scripts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ebb5b4e9-99bb-4d31-a994-a7bd15d71e5c" name="Default" comment="" />
+      <created>1459924204159</created>
+      <option name="number" value="Default" />
+      <updated>1459924204159</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.186875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66883963" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="237" column="90" selection-start-line="237" selection-start-column="90" selection-end-line="237" selection-end-column="90" />
+          <folding>
+            <marker date="1460229875187" expanded="true" signature="297:366" placeholder="SELECT COUNT... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1475:1496" placeholder="SELECT date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1637" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1657" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1685:1710" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1685:1728" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1774:1796" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1774:1798" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="2036:2126" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2251" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2264" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2308" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2339" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2622:2925" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="4663:4746" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="4663:4774" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="5313:5377" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="5498:5560" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="6845:7728" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxGenerateFlight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460476533480" expanded="true" signature="243:322" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="379:503" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="656:708" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:861" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:862" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:863" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="1398:1410" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1398:1462" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1539:1551" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1712:1754" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="true" signature="1845:1905" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="false" signature="10607:10646" placeholder="..." />
+            <marker date="1460476533480" expanded="false" signature="10673:10690" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10720:12090" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10754:11164" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="11181:12073" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12123" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12141" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12245" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12247" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12248" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12250" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12349" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <marker date="1460476129185" expanded="true" signature="2594:2612" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3133:3182" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3248:3299" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3349:3400" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3455:3506" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3552:3603" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3648:3699" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3749:3800" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3845:3896" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3949:4000" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4016:4028" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4106:4118" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="187" column="214" selection-start-line="187" selection-start-column="214" selection-end-line="187" selection-end-column="214" />
+          <folding>
+            <marker date="1460229875187" expanded="true" signature="297:366" placeholder="SELECT COUNT... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1475:1496" placeholder="SELECT date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1637" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1657" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1685:1710" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1685:1728" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1774:1796" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1774:1798" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="2036:2126" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2251" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2264" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2308" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2339" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2622:2925" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="4663:4746" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="4663:4774" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="5313:5377" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="5498:5560" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="6845:7728" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxGenerateFlight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460476533480" expanded="true" signature="243:322" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="379:503" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="656:708" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:861" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:862" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:863" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="1398:1410" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1398:1462" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1539:1551" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1712:1754" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="true" signature="1845:1905" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="false" signature="10607:10646" placeholder="..." />
+            <marker date="1460476533480" expanded="false" signature="10673:10690" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10720:12090" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10754:11164" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="11181:12073" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12123" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12141" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12245" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12247" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12248" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12250" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12349" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+          <folding>
+            <marker date="1460476129185" expanded="true" signature="2594:2612" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3133:3182" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3248:3299" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3349:3400" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3455:3506" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3552:3603" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3648:3699" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3749:3800" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3845:3896" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3949:4000" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4016:4028" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4106:4118" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="81" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <marker date="1460229875187" expanded="true" signature="297:366" placeholder="SELECT COUNT... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1475:1496" placeholder="SELECT date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1637" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1657" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1685:1710" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1685:1728" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1774:1796" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1774:1798" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="2036:2126" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2251" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2264" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2308" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2339" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2622:2925" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="4663:4746" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="4663:4774" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="5313:5377" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="5498:5560" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="6845:7728" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxGenerateFlight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460476533480" expanded="true" signature="243:322" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="379:503" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="656:708" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:861" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:862" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:863" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="1398:1410" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1398:1462" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1539:1551" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1712:1754" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="true" signature="1845:1905" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="false" signature="10607:10646" placeholder="..." />
+            <marker date="1460476533480" expanded="false" signature="10673:10690" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10720:12090" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10754:11164" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="11181:12073" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12123" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12141" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12245" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12247" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12248" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12250" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12349" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+          <folding>
+            <marker date="1460476129185" expanded="true" signature="2594:2612" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3133:3182" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3248:3299" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3349:3400" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3455:3506" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3552:3603" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3648:3699" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3749:3800" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3845:3896" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3949:4000" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4016:4028" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4106:4118" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="81" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <marker date="1460229875187" expanded="true" signature="297:366" placeholder="SELECT COUNT... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1475:1496" placeholder="SELECT date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1637" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1657" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1685:1710" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1685:1728" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1774:1796" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1774:1798" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="2036:2126" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2251" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2264" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2308" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2339" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2622:2925" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="4663:4746" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="4663:4774" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="5313:5377" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="5498:5560" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="6845:7728" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxICAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="26" selection-start-line="25" selection-start-column="8" selection-end-line="77" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxArrivalICAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="103" column="47" selection-start-line="101" selection-start-column="0" selection-end-line="103" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxPages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxPagesDepArr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+          <folding>
+            <marker date="1460476129185" expanded="true" signature="2594:2612" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3133:3182" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3248:3299" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3349:3400" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3455:3506" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3552:3603" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3648:3699" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3749:3800" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3845:3896" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3949:4000" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4016:4028" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4106:4118" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxGenerateFlight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460476533480" expanded="true" signature="243:322" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="379:503" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="656:708" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:861" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:862" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:863" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="1398:1410" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1398:1462" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1539:1551" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1712:1754" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="true" signature="1845:1905" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="false" signature="10607:10646" placeholder="..." />
+            <marker date="1460476533480" expanded="false" signature="10673:10690" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10720:12090" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10754:11164" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="11181:12073" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12123" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12141" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12245" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12247" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12248" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12250" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12349" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="368" selection-start-line="17" selection-start-column="368" selection-end-line="17" selection-end-column="368" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <marker date="1460229875187" expanded="true" signature="297:366" placeholder="SELECT COUNT... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1475:1496" placeholder="SELECT date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1637" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1657" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1685:1710" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1685:1728" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1774:1796" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1774:1798" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="2036:2126" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2251" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2264" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2308" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2339" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2622:2925" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="4663:4746" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="4663:4774" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="5313:5377" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="5498:5560" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="6845:7728" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxICAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="26" selection-start-line="25" selection-start-column="8" selection-end-line="77" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxArrivalICAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="103" column="47" selection-start-line="101" selection-start-column="0" selection-end-line="103" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxPages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxPagesDepArr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+          <folding>
+            <marker date="1460476129185" expanded="true" signature="2594:2612" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3133:3182" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3248:3299" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3349:3400" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3455:3506" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3552:3603" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3648:3699" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3749:3800" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3845:3896" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3949:4000" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4016:4028" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4106:4118" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxGenerateFlight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460476533480" expanded="true" signature="243:322" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="379:503" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="656:708" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:861" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:862" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:863" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="1398:1410" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1398:1462" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1539:1551" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1712:1754" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="true" signature="1845:1905" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="false" signature="10607:10646" placeholder="..." />
+            <marker date="1460476533480" expanded="false" signature="10673:10690" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10720:12090" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10754:11164" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="11181:12073" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12123" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12141" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12245" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12247" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12248" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12250" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12349" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="368" selection-start-line="17" selection-start-column="368" selection-end-line="17" selection-end-column="368" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding>
+            <marker date="1460229875187" expanded="true" signature="297:366" placeholder="SELECT COUNT... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1475:1496" placeholder="SELECT date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1637" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1657" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1685:1710" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1685:1728" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1774:1796" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1774:1798" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="2036:2126" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2251" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2264" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2308" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2339" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2622:2925" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="4663:4746" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="4663:4774" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="5313:5377" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="5498:5560" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="6845:7728" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxICAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxPages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <marker date="1460476129185" expanded="true" signature="2594:2612" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3133:3182" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3248:3299" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3349:3400" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3455:3506" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3552:3603" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3648:3699" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3749:3800" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3845:3896" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3949:4000" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4016:4028" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4106:4118" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28611502">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxPagesDepArr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxPages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.071528755">
+          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxArrivalICAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8569425">
+          <caret line="103" column="47" selection-start-line="101" selection-start-column="0" selection-end-line="103" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxICAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35624123">
+          <caret line="77" column="26" selection-start-line="25" selection-start-column="8" selection-end-line="77" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="129" column="62" selection-start-line="129" selection-start-column="62" selection-end-line="129" selection-end-column="62" />
+          <folding>
+            <marker date="1460229875187" expanded="true" signature="297:366" placeholder="SELECT COUNT... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1475:1496" placeholder="SELECT date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1637" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1613:1657" placeholder="UPDATE date " />
+            <marker date="1460229875187" expanded="true" signature="1685:1710" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1685:1728" placeholder="DELETE FROM " />
+            <marker date="1460229875187" expanded="true" signature="1774:1796" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="1774:1798" placeholder="SELECT * FRO... schedule" />
+            <marker date="1460229875187" expanded="true" signature="2036:2126" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2251" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2264" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2308" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2036:2339" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="2622:2925" placeholder="INSERT INTO schedule_temp... " />
+            <marker date="1460229875187" expanded="true" signature="4663:4746" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="4663:4774" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229875187" expanded="true" signature="5313:5377" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="5498:5560" placeholder="SELECT * FRO... airports" />
+            <marker date="1460229875187" expanded="true" signature="6845:7728" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="1004" selection-start-line="95" selection-start-column="1004" selection-end-line="95" selection-end-column="1004" />
+          <folding>
+            <marker date="1460476129185" expanded="true" signature="2594:2612" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3133:3182" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3248:3299" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3349:3400" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3455:3506" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3552:3603" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3648:3699" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3749:3800" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3845:3896" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="3949:4000" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4016:4028" placeholder="..." />
+            <marker date="1460476129185" expanded="true" signature="4106:4118" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxGenerateFlight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="334" column="6" selection-start-line="334" selection-start-column="6" selection-end-line="334" selection-end-column="6" />
+          <folding>
+            <marker date="1460476533480" expanded="true" signature="243:322" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="379:503" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="656:708" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:861" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:862" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="765:863" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460476533480" expanded="true" signature="1398:1410" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1398:1462" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1539:1551" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="1712:1754" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="true" signature="1845:1905" placeholder="SELECT * FRO... airports" />
+            <marker date="1460476533480" expanded="false" signature="10607:10646" placeholder="..." />
+            <marker date="1460476533480" expanded="false" signature="10673:10690" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10720:12090" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="10754:11164" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="11181:12073" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12123" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12112:12141" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12245" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12247" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12248" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12250" placeholder="..." />
+            <marker date="1460476533480" expanded="true" signature="12160:12349" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxSortByType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <marker date="1460229611556" expanded="true" signature="246:360" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229611556" expanded="true" signature="411:486" placeholder="SELECT * FRO... schedule_temp" />
+            <marker date="1460229611556" expanded="true" signature="852:916" placeholder="SELECT * FRO... airports" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxGetWeather.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="182" selection-start-line="52" selection-start-column="182" selection-end-line="52" selection-end-column="182" />
+          <folding>
+            <marker date="1460477173368" expanded="true" signature="1201:1229" placeholder="SELECT * FRO... airports" />
+            <marker date="1460477173368" expanded="true" signature="1201:1257" placeholder="SELECT * FRO... airports" />
+            <marker date="1460477173368" expanded="true" signature="1428:1584" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1428:1696" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1428:1758" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1428:1793" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1556:1571" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1662:1676" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1829:1846" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1829:1866" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1829:1903" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1829:1970" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1829:2038" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1829:2159" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1829:2160" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1829:2181" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1829:2235" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="1829:2289" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="2000:2015" placeholder="..." />
+            <marker date="1460477173368" expanded="true" signature="2130:2144" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6914446">
+          <caret line="26" column="101" selection-start-line="26" selection-start-column="101" selection-end-line="26" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

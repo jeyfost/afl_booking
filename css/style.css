@@ -1,0 +1,27 @@
+body {padding: 0; margin: 0; background-color: #f5f5f5; font-family: 'Roboto', "Myriad Set Pro", Tahoma, sans-serif, 'Open Sans', "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", Proxima; font-style: normal; font-size: 14px; font-weight: normal;}
+table {width: 100%; text-align: center; margin-top: 20px;}
+td {padding-top: 10px; padding-bottom: 10px; background-color: #fbfbfb;}
+a, #showWeatherText {margin-left: 5px; color: #33a0d7; text-decoration: none; cursor: pointer;}
+input {width: 100px; height: 40px; line-height: 40px; padding-left: 10px; padding-right: 10px; background-color: #ddd; border: none; text-transform: uppercase;}
+form {position: relative; float: left;}
+
+.headTR:hover{}
+a:hover, #showWeatherText:hover {color: #23527c; white-space: nowrap;}
+input:hover {background-color: #c0c0c0;}
+#button:hover {background-color: #ffeecb; box-shadow: none;}
+
+#content {position: relative; width: 960px; padding: 20px; margin: 20px auto; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+#content2 {position: relative; width: 960px; padding: 20px; margin: 20px auto 100px auto; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+#pageNumbers {width: 100%; text-align: center; margin-top: 20px;}
+#generationResult {width: 100%; margin-top: 20px;}
+#booking {width: 100%;}
+#generateFlightForm {width: 100%; margin-top: 20px;}
+#button {height: 40px; width: 200px; line-height: 40px; background-color: #ffc44b; cursor: pointer; text-transform: none; font-family: 'Roboto', "Myriad Set Pro", Tahoma, sans-serif, 'Open Sans', "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", Proxima; font-style: normal; font-size: 14px; font-weight: normal; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+
+.headTD {background-color: #ffeecb;}
+.numberBlock {position: relative; float: left; width: 30px; height: 30px; line-height: 30px; text-align: center; margin: 5px; cursor: pointer; color: #33a0d7;}
+.numberBlockActive {position: relative; float: left; width: 30px; height: 30px; line-height: 30px; text-align: center; background-color: #33a0d7; color: #fff; margin: 5px;}
+.radio {width: 20px; height: 20px;}
+.radioContainer {position: relative; float: left; padding: 10px; background-color: #fbfbfb;}
+.metar_taf {width: calc(100% - 20px); padding: 10px; margin-top: 20px; background-color: #fbfbfb;}
+.metar_taf_inner {width: calc(100% - 20px); padding: 10px; margin-top: 20px; background-color: #ddd;}
