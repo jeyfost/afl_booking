@@ -46,10 +46,12 @@
             <p>Погода в аэропортах вылета и назначения:</p>
             <div class='metar_taf'>
                 <img src='img/flags/RU.png' title='Russian Federation' /> <a href='http://va-aeroflot.su/airport/UUEE' style='margin-left: 0;'>Sheremetyevo (UUEE)</a>:<br /><br />
-                <div class='metar_taf_inner' style='margin-top: 0;'><b>Metar</b>: UUEE ".$w1[1]."</div><div class='metar_taf_inner'><b>TAF</b>: UUEE ".$w1[2]."</div>
+                <div class='metar_taf_inner' id='depMetarBlock' style='margin-top: 0;'><b>Metar</b>: <span id='depMetar'>UUEE ".$w1[1]."</span></div><div class='metar_taf_inner'><b>TAF</b>: UUEE ".$w1[2]."</div>
+                <p class='showWeatherText' onclick='decodeMetar(\"depMetarBlock\")'>Расшифровать код метар</p>
             </div>
             <div class='metar_taf'>
                 <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$airport['icao']."' style='margin-left: 0;'>".$airport['name']." (".$airport['icao'].")</a>:<br /><br />
-                <div class='metar_taf_inner' style='margin-top: 0;'><b>Metar</b>: ".$_POST['icao']." ".$w2[1]."</div><div class='metar_taf_inner'><b>TAF</b>: ".$_POST['icao']." ".$w2[2]."</div>
+                <div class='metar_taf_inner' id='arrMetarBlock' style='margin-top: 0;'><b>Metar</b>: <span id='arrMetar'>".$_POST['icao']." ".$w2[1]."</span></div><div class='metar_taf_inner'><b>TAF</b>: ".$_POST['icao']." ".$w2[2]."</div>
+                <p class='showWeatherText' onclick='decodeMetar(\"arrMetarBlock\")'>Расшифровать код метар</p>
             </div>
     ";

@@ -100,3 +100,20 @@ function showWeather(icao) {
         }
     });
 }
+
+function decodeMetar(block) {
+    if(block == "depMetarBlock") {
+        var metar = $('#depMetar').html();
+    } else {
+        var metar = $('#arrMetar').html();
+    }
+
+    $.ajax({
+        type: 'POST',
+        data: {"metar": metar},
+        url: 'scripts/ajaxMetarDecoder.php',
+        success: function(response) {
+            document.getElementById(block).innerHTML = response;
+        }
+    });
+}

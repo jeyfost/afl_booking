@@ -1,12 +1,12 @@
 body {padding: 0; margin: 0; background-color: #f5f5f5; font-family: 'Roboto', "Myriad Set Pro", Tahoma, sans-serif, 'Open Sans', "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", Proxima; font-style: normal; font-size: 14px; font-weight: normal;}
 table {width: 100%; text-align: center; margin-top: 20px;}
 td {padding-top: 10px; padding-bottom: 10px; background-color: #fbfbfb;}
-a, #showWeatherText {margin-left: 5px; color: #33a0d7; text-decoration: none; cursor: pointer;}
+a, .showWeatherText {margin-left: 5px; color: #33a0d7; text-decoration: none; cursor: pointer;}
 input {width: 100px; height: 40px; line-height: 40px; padding-left: 10px; padding-right: 10px; background-color: #ddd; border: none; text-transform: uppercase;}
 form {position: relative; float: left;}
 
 .headTR:hover{}
-a:hover, #showWeatherText:hover {color: #23527c; white-space: nowrap;}
+a:hover, .showWeatherText:hover {color: #23527c; white-space: nowrap;}
 input:hover {background-color: #c0c0c0;}
 #button:hover {background-color: #ffeecb; box-shadow: none;}
 

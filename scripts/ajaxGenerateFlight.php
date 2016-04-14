@@ -330,7 +330,7 @@ if(!empty($flight)) {
         </table>
         <div style='width: 100% margin-top: 20px;' id='weatherBlock'>
             <br />
-            <center><p id='showWeatherText' onclick='showWeather(\"".$airport2['icao']."\")'>Показать погоду в аэропортах вылета и назначения</p></center>
+            <center><p class='showWeatherText' onclick='showWeather(\"".$airport2['icao']."\")'>Показать погоду в аэропортах вылета и назначения</p></center>
         </div>
     ";
 }
