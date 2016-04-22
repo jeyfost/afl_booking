@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebb5b4e9-99bb-4d31-a994-a7bd15d71e5c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/ajaxMetarDecoder.php" afterPath="$PROJECT_DIR$/scripts/ajaxMetarDecoder.php" />
     </list>
@@ -89,10 +88,10 @@
       <file leaf-file-name="ajaxMetarDecoder.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.92847127">
-              <caret line="542" column="348" selection-start-line="542" selection-start-column="348" selection-end-line="542" selection-end-column="348" />
+            <state vertical-scroll-proportion="0.7377279">
+              <caret line="576" column="4" selection-start-line="576" selection-start-column="4" selection-end-line="576" selection-end-column="4" />
               <folding>
-                <marker date="1461317600776" expanded="true" signature="256:313" placeholder="SELECT * FRO... airports" />
+                <marker date="1461335067665" expanded="true" signature="888:945" placeholder="SELECT * FRO... airports" />
               </folding>
             </state>
           </provider>
@@ -183,8 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,6 +244,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,7 +337,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460641082596</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Правка в дешифровщие видимости по полосам">
+      <created>1461317640287</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1461317640287</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -382,7 +387,8 @@
     <MESSAGE value="Исправлен кофликт типов данных" />
     <MESSAGE value="Частично реализован декодер метара. Работает декодирование информации об аэропорте, времени и ветре." />
     <MESSAGE value="В дешифровщик добавлена расшифровка видимости по полосам" />
-    <option name="LAST_COMMIT_MESSAGE" value="В дешифровщик добавлена расшифровка видимости по полосам" />
+    <MESSAGE value="Правка в дешифровщие видимости по полосам" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правка в дешифровщие видимости по полосам" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -978,10 +984,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92847127">
-          <caret line="542" column="348" selection-start-line="542" selection-start-column="348" selection-end-line="542" selection-end-column="348" />
+        <state vertical-scroll-proportion="0.7377279">
+          <caret line="576" column="4" selection-start-line="576" selection-start-column="4" selection-end-line="576" selection-end-column="4" />
           <folding>
-            <marker date="1461317600776" expanded="true" signature="256:313" placeholder="SELECT * FRO... airports" />
+            <marker date="1461335067665" expanded="true" signature="888:945" placeholder="SELECT * FRO... airports" />
           </folding>
         </state>
       </provider>

@@ -2,11 +2,39 @@
 
 include ('connect.php');
 
-$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 0050S5000W R04/P1500N R22/0200V1000D FG VV001 15/15 Q1012";
+$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D 15/15 Q1012";
 
 $data = explode(' ', $_POST['metar']);
 
 $counter = 0;
+
+function decodeTemperature($cell) {
+    if(substr($cell, 0, 1) == 'M') {
+        $temperature = "-".substr($cell, 1, 2);
+    } else {
+        $temperature = substr($cell, 0, 2);
+    }
+
+    return $temperature;
+};
+
+function decodeDewPoint($cell) {
+    if(substr($cell, 0, 1) == 'M') {
+        if(substr($cell, 4, 1) == 'M') {
+            $dewPoint = "-".substr($cell, 5);
+        } else {
+            $dewPoint = substr($cell, 4);
+        }
+    } else {
+        if(substr($cell, 3, 1) == 'M') {
+            $dewPoint = "-".substr($cell, 4);
+        } else {
+            $dewPoint = substr($cell, 3);
+        }
+    }
+
+    return $dewPoint;
+}
 
 //информация оь аэропорте
 $airportResult = $mysqli->query("SELECT * FROM airports WHERE icao = '".$data[$counter]."'");
@@ -534,10 +562,19 @@ if(substr($data[$counter], 0, 1) == "R" and is_numeric(substr($data[$counter], 1
         }
     }
 }
-//////////////////////////////////////////////////////
 
 if(substr($visibility, strlen($visibility) - 1) != '.') {
     $visibility .= '.';
 }
+//////////////////////////////////////////////////////
 
-echo "Погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time.":<br /><br /><b>Ветер у земли</b>: ".$windTotal."<br /><br /><b>Видимость</b>: ".$visibility;
+$restInfo = "";
+
+if(substr($data[$counter], 2, 1) == '/' or substr($data[$counter], 3, 1) == '/') {
+    $restInfo .= "<b>Температура</b>: ".decodeTemperature($data[$counter])."&deg;C"."<br /><br /><b>Точка росы</b>: ".decodeDewPoint($data[$counter])."&deg;C";
+    $counter++;
+} else {
+
+}
+
+echo "Погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time.":<br /><br /><b>Ветер у земли</b>: ".$windTotal."<br /><br /><b>Видимость</b>: ".$visibility."<br /><br />".$restInfo;
