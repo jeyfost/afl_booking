@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebb5b4e9-99bb-4d31-a994-a7bd15d71e5c" name="Default" comment="В дешифровщик добавлена расшифровка в">
+    <list default="true" id="ebb5b4e9-99bb-4d31-a994-a7bd15d71e5c" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/ajaxMetarDecoder.php" afterPath="$PROJECT_DIR$/scripts/ajaxMetarDecoder.php" />
@@ -89,10 +89,10 @@
       <file leaf-file-name="ajaxMetarDecoder.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40392706">
-              <caret line="522" column="99" selection-start-line="522" selection-start-column="99" selection-end-line="522" selection-end-column="99" />
+            <state vertical-scroll-proportion="0.92847127">
+              <caret line="542" column="348" selection-start-line="542" selection-start-column="348" selection-end-line="542" selection-end-column="348" />
               <folding>
-                <marker date="1460640733768" expanded="true" signature="256:313" placeholder="SELECT * FRO... airports" />
+                <marker date="1461317600776" expanded="true" signature="256:313" placeholder="SELECT * FRO... airports" />
               </folding>
             </state>
           </provider>
@@ -183,6 +183,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -245,8 +247,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,7 +332,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460620609897</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="В дешифровщик добавлена расшифровка видимости по полосам">
+      <created>1460641082596</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1460641082596</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -375,7 +381,8 @@
     <MESSAGE value="Тест" />
     <MESSAGE value="Исправлен кофликт типов данных" />
     <MESSAGE value="Частично реализован декодер метара. Работает декодирование информации об аэропорте, времени и ветре." />
-    <option name="LAST_COMMIT_MESSAGE" value="Частично реализован декодер метара. Работает декодирование информации об аэропорте, времени и ветре." />
+    <MESSAGE value="В дешифровщик добавлена расшифровка видимости по полосам" />
+    <option name="LAST_COMMIT_MESSAGE" value="В дешифровщик добавлена расшифровка видимости по полосам" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -971,10 +978,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40392706">
-          <caret line="522" column="99" selection-start-line="522" selection-start-column="99" selection-end-line="522" selection-end-column="99" />
+        <state vertical-scroll-proportion="0.92847127">
+          <caret line="542" column="348" selection-start-line="542" selection-start-column="348" selection-end-line="542" selection-end-column="348" />
           <folding>
-            <marker date="1460640733768" expanded="true" signature="256:313" placeholder="SELECT * FRO... airports" />
+            <marker date="1461317600776" expanded="true" signature="256:313" placeholder="SELECT * FRO... airports" />
           </folding>
         </state>
       </provider>

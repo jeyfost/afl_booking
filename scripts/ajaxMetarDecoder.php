@@ -536,5 +536,8 @@ if(substr($data[$counter], 0, 1) == "R" and is_numeric(substr($data[$counter], 1
 }
 //////////////////////////////////////////////////////
 
+if(substr($visibility, strlen($visibility) - 1) != '.') {
+    $visibility .= '.';
+}
 
 echo "Погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time.":<br /><br /><b>Ветер у земли</b>: ".$windTotal."<br /><br /><b>Видимость</b>: ".$visibility;
