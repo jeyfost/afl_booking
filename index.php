@@ -1,10 +1,15 @@
 <?php
 
+    session_start();
+
+    if(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) != "ru" and (!isset($_SESSION['language']) or $_SESSION['language'] == "en")) {
+        header("Location: en/?p=1");
+    }
+
     if(empty($_REQUEST['p'])) {
         header("Location: ?p=1");
     }
 
-    session_start();
     include('scripts/connect.php');
     include('scripts/functions.php');
 
@@ -93,6 +98,10 @@
 </head>
 
 <body>
+
+    <div id="languageSelect">
+        <a href="scripts/languageSelect.php"><img src="img/flags/GB.png" title="Switch to english version" /></a>
+    </div>
 
     <div id="content">
         <form id="departureAirportForm" method="post" style="margin-left: 2px;">

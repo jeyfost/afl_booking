@@ -17,6 +17,7 @@ input:hover {background-color: #c0c0c0;}
 #booking {width: 100%;}
 #generateFlightForm {width: 100%; margin-top: 20px;}
 #button {height: 40px; width: 200px; line-height: 40px; background-color: #ffc44b; cursor: pointer; text-transform: none; font-family: 'Roboto', "Myriad Set Pro", Tahoma, sans-serif, 'Open Sans', "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", Proxima; font-style: normal; font-size: 14px; font-weight: normal; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+#languageSelect {position: absolute; top: 20px; left: calc(50% + 520px);}
 
 .headTD {background-color: #ffeecb;}
 .numberBlock {position: relative; float: left; width: 30px; height: 30px; line-height: 30px; text-align: center; margin: 5px; cursor: pointer; color: #33a0d7;}
