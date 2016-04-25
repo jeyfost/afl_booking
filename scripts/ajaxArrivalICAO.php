@@ -60,13 +60,13 @@ while($schedule = $scheduleResult->fetch_assoc()) {
     if($arr_h > $dep_h) {
         $h = $arr_h - $dep_h;
     } else {
-        $h = $arr_h - $dep_h + 24;
+        $h = (int)$arr_h - $dep_h + 24;
     }
 
     if($arr_m >= $dep_m) {
         $m = $arr_m - $dep_m;
     } else {
-        $m = $arr_m - $dep_m + 60;
+        $m = (int)$arr_m - $dep_m + 60;
         $h--;
     }
 
