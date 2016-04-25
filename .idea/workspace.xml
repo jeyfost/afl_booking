@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebb5b4e9-99bb-4d31-a994-a7bd15d71e5c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/ajaxArrivalICAO.php" afterPath="$PROJECT_DIR$/scripts/ajaxArrivalICAO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/ajaxICAO.php" afterPath="$PROJECT_DIR$/scripts/ajaxICAO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/ajaxMetarDecoder.php" afterPath="$PROJECT_DIR$/scripts/ajaxMetarDecoder.php" />
     </list>
     <ignored path="booking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +36,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.692307">
+            <state vertical-scroll-proportion="0.0">
               <caret line="102" column="106" selection-start-line="102" selection-start-column="106" selection-end-line="102" selection-end-column="106" />
               <folding>
                 <marker date="1461593069125" expanded="true" signature="476:545" placeholder="SELECT COUNT... schedule" />
@@ -58,23 +57,6 @@
                 <marker date="1461593069125" expanded="true" signature="5648:5712" placeholder="SELECT * FRO... airports" />
                 <marker date="1461593069125" expanded="true" signature="5833:5895" placeholder="SELECT * FRO... airports" />
                 <marker date="1461593069125" expanded="true" signature="7200:8083" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajaxICAO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/ajaxICAO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-52.96154">
-              <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
-              <folding>
-                <marker date="1461593350482" expanded="true" signature="198:576" placeholder="..." />
-                <marker date="1461593350482" expanded="true" signature="624:726" placeholder="SELECT * FRO... schedule_temp" />
-                <marker date="1461593350482" expanded="true" signature="1134:1198" placeholder="SELECT * FRO... airports" />
-                <marker date="1461593350482" expanded="true" signature="1295:1357" placeholder="SELECT * FRO... airports" />
-                <marker date="1461593350482" expanded="true" signature="2280:3066" placeholder="..." />
-                <marker date="1461593350482" expanded="true" signature="3119:3205" placeholder="SELECT COUNT... schedule_temp" />
               </folding>
             </state>
           </provider>
@@ -103,32 +85,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajaxMetarDecoder.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ajaxMetarDecoder.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-103.26923">
-              <caret line="561" column="9" selection-start-line="561" selection-start-column="9" selection-end-line="561" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.33380085">
+              <caret line="173" column="57" selection-start-line="173" selection-start-column="57" selection-end-line="173" selection-end-column="57" />
               <folding>
-                <marker date="1461335206176" expanded="true" signature="909:966" placeholder="SELECT * FRO... airports" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajaxArrivalICAO.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/ajaxArrivalICAO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27349228">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <marker date="1461593350421" expanded="true" signature="64:410" placeholder="..." />
-                <marker date="1461593350421" expanded="true" signature="580:714" placeholder="SELECT * FRO... schedule_temp" />
-                <marker date="1461593350421" expanded="true" signature="765:855" placeholder="SELECT * FRO... schedule_temp" />
-                <marker date="1461593350421" expanded="true" signature="1221:1285" placeholder="SELECT * FRO... airports" />
-                <marker date="1461593350421" expanded="true" signature="1374:1436" placeholder="SELECT * FRO... airports" />
-                <marker date="1461593350421" expanded="true" signature="2234:2988" placeholder="..." />
-                <marker date="1461593350421" expanded="true" signature="3066:3184" placeholder="SELECT COUNT... schedule_temp" />
-                <marker date="1461593350421" expanded="true" signature="3232:3306" placeholder="SELECT COUNT... schedule_temp" />
+                <marker date="1461601247591" expanded="true" signature="7207:7264" placeholder="SELECT * FRO... airports" />
               </folding>
             </state>
           </provider>
@@ -137,7 +100,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077">
+            <state vertical-scroll-proportion="0.0">
               <caret line="19" column="72" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
               <folding />
             </state>
@@ -171,7 +134,6 @@
         <option value="$PROJECT_DIR$/scripts/ajaxGenerateFlight.php" />
         <option value="$PROJECT_DIR$/js/functions.js" />
         <option value="$PROJECT_DIR$/scripts/ajaxGetWeather.php" />
-        <option value="$PROJECT_DIR$/scripts/ajaxMetarDecoder.php" />
         <option value="$PROJECT_DIR$/en/scripts/ajaxArrivalICAO.php" />
         <option value="$PROJECT_DIR$/en/scripts/ajaxGenerateFlight.php" />
         <option value="$PROJECT_DIR$/en/scripts/ajaxGetWeather.php" />
@@ -186,6 +148,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/scripts/ajaxICAO.php" />
         <option value="$PROJECT_DIR$/scripts/ajaxArrivalICAO.php" />
+        <option value="$PROJECT_DIR$/scripts/ajaxMetarDecoder.php" />
       </list>
     </option>
   </component>
@@ -229,7 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -273,44 +235,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="en" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="booking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="booking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="en" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="booking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="booking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,7 +351,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461574146873</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Исправлено приведение типов в выборке рейсов">
+      <created>1461593411169</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1461593411169</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -467,7 +404,8 @@
     <MESSAGE value="Правка в дешифровщие видимости по полосам" />
     <MESSAGE value="В дешифровщик добавлена расшифровка температуры и точки росы" />
     <MESSAGE value="Добавлена английская версия" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена английская версия" />
+    <MESSAGE value="Исправлено приведение типов в выборке рейсов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлено приведение типов в выборке рейсов" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -847,7 +785,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="72" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
           <folding />
         </state>
@@ -855,7 +793,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.692307">
+        <state vertical-scroll-proportion="0.0">
           <caret line="102" column="106" selection-start-line="102" selection-start-column="106" selection-end-line="102" selection-end-column="106" />
           <folding>
             <marker date="1461593069125" expanded="true" signature="476:545" placeholder="SELECT COUNT... schedule" />
@@ -905,19 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023842918">
           <caret line="106" column="111" selection-start-line="106" selection-start-column="111" selection-end-line="106" selection-end-column="111" />
-          <folding>
-            <marker date="1461573079707" expanded="true" signature="561:630" placeholder="SELECT * FRO... schedule" />
-            <marker date="1461573079707" expanded="true" signature="1739:1760" placeholder="SELECT date " />
-            <marker date="1461573079707" expanded="true" signature="1877:1921" placeholder="UPDATE date " />
-            <marker date="1461573079707" expanded="true" signature="1949:1992" placeholder="DELETE FROM " />
-            <marker date="1461573079707" expanded="true" signature="2038:2060" placeholder="SELECT * FRO... schedule" />
-            <marker date="1461573079707" expanded="true" signature="2300:2603" placeholder="INSERT INTO schedule_temp... " />
-            <marker date="1461573079707" expanded="true" signature="2886:3189" placeholder="INSERT INTO schedule_temp... " />
-            <marker date="1461573079707" expanded="true" signature="5089:5200" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461573079707" expanded="true" signature="5739:5803" placeholder="SELECT * FRO... airports" />
-            <marker date="1461573079707" expanded="true" signature="5924:5986" placeholder="SELECT * FRO... airports" />
-            <marker date="1461573079707" expanded="true" signature="7291:8174" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -925,14 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-52.96154">
           <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
-          <folding>
-            <marker date="1461593350482" expanded="true" signature="198:576" placeholder="..." />
-            <marker date="1461593350482" expanded="true" signature="624:726" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461593350482" expanded="true" signature="1134:1198" placeholder="SELECT * FRO... airports" />
-            <marker date="1461593350482" expanded="true" signature="1295:1357" placeholder="SELECT * FRO... airports" />
-            <marker date="1461593350482" expanded="true" signature="2280:3066" placeholder="..." />
-            <marker date="1461593350482" expanded="true" signature="3119:3205" placeholder="SELECT COUNT... schedule_temp" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,17 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="8.01122">
           <caret line="332" column="148" selection-start-line="332" selection-start-column="20" selection-end-line="332" selection-end-column="148" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-103.26923">
-          <caret line="561" column="9" selection-start-line="561" selection-start-column="9" selection-end-line="561" selection-end-column="9" />
-          <folding>
-            <marker date="1461335206176" expanded="true" signature="909:966" placeholder="SELECT * FRO... airports" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,23 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5175316">
           <caret line="304" column="18" selection-start-line="304" selection-start-column="18" selection-end-line="304" selection-end-column="18" />
-          <folding>
-            <marker date="1461571553542" expanded="true" signature="243:322" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461571553542" expanded="true" signature="379:503" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461571553542" expanded="true" signature="656:708" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461571553542" expanded="true" signature="765:862" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461571553542" expanded="true" signature="1398:1462" placeholder="..." />
-            <marker date="1461571553542" expanded="true" signature="1559:1571" placeholder="..." />
-            <marker date="1461571553542" expanded="true" signature="1732:1774" placeholder="SELECT * FRO... airports" />
-            <marker date="1461571553542" expanded="true" signature="1865:1925" placeholder="SELECT * FRO... airports" />
-            <marker date="1461571553542" expanded="true" signature="10627:10666" placeholder="..." />
-            <marker date="1461571553542" expanded="true" signature="10693:10710" placeholder="..." />
-            <marker date="1461571553542" expanded="true" signature="10743:12122" placeholder="..." />
-            <marker date="1461571553542" expanded="true" signature="10777:11196" placeholder="..." />
-            <marker date="1461571553542" expanded="true" signature="11213:12105" placeholder="..." />
-            <marker date="1461571553542" expanded="false" signature="12144:12173" placeholder="..." />
-            <marker date="1461571553542" expanded="true" signature="12192:12384" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -982,14 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.7643759">
           <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-          <folding>
-            <marker date="1461571807574" expanded="true" signature="198:585" placeholder="..." />
-            <marker date="1461571807574" expanded="true" signature="633:735" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461571807574" expanded="true" signature="1143:1207" placeholder="SELECT * FRO... airports" />
-            <marker date="1461571807574" expanded="true" signature="1304:1366" placeholder="SELECT * FRO... airports" />
-            <marker date="1461571807574" expanded="true" signature="2289:3075" placeholder="..." />
-            <marker date="1461571807574" expanded="true" signature="3128:3214" placeholder="SELECT COUNT... schedule_temp" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -997,16 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2847125">
           <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
-          <folding>
-            <marker date="1461571332360" expanded="true" signature="64:419" placeholder="..." />
-            <marker date="1461571332360" expanded="true" signature="589:723" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461571332360" expanded="true" signature="774:864" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461571332360" expanded="true" signature="1230:1294" placeholder="SELECT * FRO... airports" />
-            <marker date="1461571332360" expanded="true" signature="1383:1445" placeholder="SELECT * FRO... airports" />
-            <marker date="1461571332360" expanded="true" signature="2243:2997" placeholder="..." />
-            <marker date="1461571332360" expanded="true" signature="3075:3193" placeholder="SELECT COUNT... schedule_temp" />
-            <marker date="1461571332360" expanded="true" signature="3241:3315" placeholder="SELECT COUNT... schedule_temp" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,15 +885,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27349228">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33380085">
+          <caret line="173" column="57" selection-start-line="173" selection-start-column="57" selection-end-line="173" selection-end-column="57" />
           <folding>
-            <marker date="1461593350421" expanded="true" signature="64:410" placeholder="..." />
-            <marker date="1461593350421" expanded="true" signature="580:714" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461593350421" expanded="true" signature="765:855" placeholder="SELECT * FRO... schedule_temp" />
-            <marker date="1461593350421" expanded="true" signature="1221:1285" placeholder="SELECT * FRO... airports" />
-            <marker date="1461593350421" expanded="true" signature="1374:1436" placeholder="SELECT * FRO... airports" />
-            <marker date="1461593350421" expanded="true" signature="2234:2988" placeholder="..." />
-            <marker date="1461593350421" expanded="true" signature="3066:3184" placeholder="SELECT COUNT... schedule_temp" />
-            <marker date="1461593350421" expanded="true" signature="3232:3306" placeholder="SELECT COUNT... schedule_temp" />
+            <marker date="1461601247591" expanded="true" signature="7207:7264" placeholder="SELECT * FRO... airports" />
           </folding>
         </state>
       </provider>

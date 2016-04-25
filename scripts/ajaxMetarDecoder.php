@@ -2,7 +2,7 @@
 
 include ('connect.php');
 
-$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D -FZRA -FZDZ BR VV005 15/15 Q1012";
+$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D -FZDZ -FZRA BR 15/15 Q1012";
 
 $data = explode(' ', $_POST['metar']);
 
@@ -36,7 +36,159 @@ function decodeDewPoint($cell) {
     return $dewPoint;
 }
 
-//информация оь аэропорте
+function decodePhenomena($cells, $c, $adding, $initResult) {
+    $i = $c + $adding;
+    if($initResult == "") {
+        $result = $initResult;
+    } else {
+        $result = $initResult."; ";
+    }
+
+    $conditionsS = array(
+        array('code' => 'DZ', 'name' => 'морось', 's' => 'f'),
+        array('code' => 'RA', 'name' => 'дождь', 's' => 'm'),
+        array('code' => 'SN', 'name' => 'снег', 's' => 'm'),
+        array('code' => 'SG', 'name' => 'снежные зёрна', 's' => 'u'),
+        array('code' => 'RASN', 'name' => 'дождь со снегом', 's' => 'm'),
+        array('code' => 'SNRA', 'name' => 'снег с дождём', 's' => 'm'),
+        array('code' => 'SHSN', 'name' => 'ливневый снег', 's' => 'm'),
+        array('code' => 'SHRA', 'name' => 'ливневый дождь', 's' => 'm'),
+        array('code' => 'SHGR', 'name' => 'град', 's' => 'm'),
+        array('code' => 'FZRA', 'name' => 'переохлаждённый дождь', 's' => 'm'),
+        array('code' => 'FZDZ', 'name' => 'переохлаждённая морось', 's' => 'f'),
+        array('code' => 'TSRA', 'name' => 'гроза с дождём', 's' => 'f'),
+        array('code' => 'TSGR', 'name' => 'гроза с градом', 's' => 'f'),
+        array('code' => 'TSGS', 'name' => 'гроза со снежной крупой', 's' => 'f'),
+        array('code' => 'TSSN', 'name' => 'гроза со снегом', 's' => 'f'),
+        array('code' => 'DS', 'name' => 'пыльная буря', 's' => 'f'),
+        array('code' => 'SS', 'name' => 'песчаная буря', 's' => 'f'),
+    );
+
+    $conditionsW = array(
+        array('code' => 'FG', 'name' => 'туман'),
+        array('code' => 'VCFG', 'name' => 'туман в окрестности'),
+        array('code' => 'FZFG', 'name' => 'переохлаждённый туман'),
+        array('code' => 'MIFG', 'name' => 'позёмный туман'),
+        array('code' => 'PRFG', 'name' => 'аэродром частично покрыт туманом'),
+        array('code' => 'BCFG', 'name' => 'туман местами'),
+        array('code' => 'BR', 'name' => 'дымка'),
+        array('code' => 'HZ', 'name' => 'мгла'),
+        array('code' => 'FU', 'name' => 'дым'),
+        array('code' => 'DRSN', 'name' => 'снежный позёмок'),
+        array('code' => 'DRSA', 'name' => 'песчаный позёмок'),
+        array('code' => 'DRDU', 'name' => 'пыльный позёмок'),
+        array('code' => 'DU', 'name' => 'пыльная мгла'),
+        array('code' => 'BLSN', 'name' => 'снежная низовая метель'),
+        array('code' => 'BLDU', 'name' => 'пыльная низовая метель'),
+        array('code' => 'SQ', 'name' => 'шквал'),
+        array('code' => 'IC', 'name' => 'ледяный иглы'),
+        array('code' => 'TS', 'name' => 'гроза'),
+        array('code' => 'VCTS', 'name' => 'гроза в окрестности'),
+        array('code' => 'UP', 'name' => 'неопределённый вид осадков'),
+        array('code' => 'PL', 'name' => 'ледяной дождь'),
+        array('code' => 'VA', 'name' => 'вулканический пепел'),
+        array('code' => 'SA', 'name' => 'песок'),
+        array('code' => 'PO', 'name' => 'чётко выраженные пыльные или песчаные вихри'),
+        array('code' => 'FC', 'name' => 'Воронкообразное облако, смерч, торнадо или водяной смерч'),
+    );
+
+    if(substr($cells[$i], 0, 1) == '-' or substr($cells[$i], 0, 1) == '+') {
+        $condition = substr($cells[$i], 1);
+        $success = 0;
+
+        for($j = 0; $j < count($conditionsS); $j++) {
+            if($condition == $conditionsS[$j]['code']) {
+                $success++;
+
+                switch(substr($cells[$i], 0, 1)) {
+                    case "-":
+                        switch($conditionsS[$j]['s']) {
+                            case "m":
+                                $power = "слабый ";
+                                break;
+                            case "f":
+                                $power = "слабая ";
+                                break;
+                            case "u":
+                                $power = "слабые ";
+                                break;
+                            default:
+                                $power = "слабый ";
+                                break;
+                        }
+                        break;
+                    case "+":
+                        switch($conditionsS[$j]['s']) {
+                            case "m":
+                                $power = "сильный ";
+                                break;
+                            case "f":
+                                $power = "сильная ";
+                                break;
+                            case "u":
+                                $power = "сильные ";
+                                break;
+                            default:
+                                $power = "сильный ";
+                                break;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                $result .= $power.$conditionsS[$j]['name'];
+            }
+        }
+
+        if($success == 0) {
+            for($j = 0; $j < count($conditionsW); $j++) {
+                if($condition == $conditionsW[$j]['code']) {
+                    $success++;
+
+                    switch(substr($cells[$i], 0, 1)) {
+                        case "-":
+                            $power = "слабый ";
+                            break;
+                        case "+":
+                            $power = "сильный ";
+                            break;
+                        default:
+                            break;
+                    }
+                    $result .= $power.$conditionsW[$j]['name'];
+                }
+            }
+        }
+    } else {
+        $condition = $cells[$i];
+        $success = 0;
+
+        for($j = 0; $j < count($conditionsS); $j++) {
+            if($condition == $conditionsS[$j]['code']) {
+                $success++;
+                $result .= $conditionsS[$j]['name'];
+            }
+        }
+
+        if($success == 0) {
+            for($j = 0; $j < count($conditionsW); $j++) {
+                if($condition == $conditionsW[$j]['code']) {
+                    $success++;
+                    $result .= $conditionsW[$j]['name'];
+                }
+            }
+        }
+    }
+
+    if(substr($cells[$i + 1], 2, 1) == '/' or substr($cells[$i + 1], 3, 1) == '/') {
+        return $result.".";
+    } else {
+        return decodePhenomena($cells, $c, $adding + 1, $result);
+    }
+
+}
+
+//информация об аэропорте
 $airportResult = $mysqli->query("SELECT * FROM airports WHERE icao = '".$data[$counter]."'");
 $airport = $airportResult->fetch_assoc();
 $counter++;
@@ -70,7 +222,7 @@ if(substr($minutes, 0, 1) != "1") {
         $m_word = "минут";
     }
 } else {
-    $m_word = "мунут";
+    $m_word = "минут";
 }
 
 $time  = $time.$word." ".$minutes." ".$m_word." по UTC";
@@ -574,7 +726,8 @@ if(substr($data[$counter], 2, 1) == '/' or substr($data[$counter], 3, 1) == '/')
     $restInfo .= "<b>Температура</b>: ".decodeTemperature($data[$counter])."&deg;C"."<br /><br /><b>Точка росы</b>: ".decodeDewPoint($data[$counter])."&deg;C";
     $counter++;
 } else {
-
+    $restInfo .= "<b>Погодные явления</b>: ";
+    $restInfo .= decodePhenomena($data, $counter, 0, "");
 }
 
 echo "Погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time.":<br /><br /><b>Ветер у земли</b>: ".$windTotal."<br /><br /><b>Видимость</b>: ".$visibility."<br /><br />".$restInfo;
