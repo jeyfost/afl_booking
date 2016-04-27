@@ -87,11 +87,11 @@
       <file leaf-file-name="ajaxMetarDecoder.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45301542">
-              <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.09537167">
+              <caret line="4" column="119" selection-start-line="4" selection-start-column="119" selection-end-line="4" selection-end-column="119" />
               <folding>
-                <marker date="1461758779957" expanded="true" signature="11324:11381" placeholder="SELECT * FRO... airports" />
-                <marker date="1461758779957" expanded="true" signature="31826:31841" placeholder="..." />
+                <marker date="1461759863410" expanded="true" signature="11312:11369" placeholder="SELECT * FRO... airports" />
+                <marker date="1461759863410" expanded="true" signature="32647:32662" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -397,7 +397,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461758618834</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Оптимизирована функция расшифровки погодных явлений">
+      <created>1461758813315</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1461758813315</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -449,7 +455,8 @@
     <MESSAGE value="Оптимизированы некоторые функции" />
     <MESSAGE value="В дешифровщик добавлен анализатор вертикальной видимости и облачности" />
     <MESSAGE value="Оптимизирована функция дешифрования облачности" />
-    <option name="LAST_COMMIT_MESSAGE" value="Оптимизирована функция дешифрования облачности" />
+    <MESSAGE value="Оптимизирована функция расшифровки погодных явлений" />
+    <option name="LAST_COMMIT_MESSAGE" value="Оптимизирована функция расшифровки погодных явлений" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -934,11 +941,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45301542">
-          <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.09537167">
+          <caret line="4" column="119" selection-start-line="4" selection-start-column="119" selection-end-line="4" selection-end-column="119" />
           <folding>
-            <marker date="1461758779957" expanded="true" signature="11324:11381" placeholder="SELECT * FRO... airports" />
-            <marker date="1461758779957" expanded="true" signature="31826:31841" placeholder="..." />
+            <marker date="1461759863410" expanded="true" signature="11312:11369" placeholder="SELECT * FRO... airports" />
+            <marker date="1461759863410" expanded="true" signature="32647:32662" placeholder="..." />
           </folding>
         </state>
       </provider>

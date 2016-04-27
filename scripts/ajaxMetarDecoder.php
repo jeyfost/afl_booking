@@ -2,7 +2,7 @@
 
 include ('connect.php');
 
-$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D OVC011TCU BKN007 VV005 15/15 Q1012";
+$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D OVC011TCU BKN007 VV005 15/15 Q1000";
 
 echo "<b>Исходный код</b>: ".$_POST['metar']."<br /><br />";
 
@@ -853,6 +853,7 @@ if(substr($visibility, strlen($visibility) - 1) != '.') {
 
 $restInfo = "";
 
+//сервисные службы для погодных явлений, облачности и вертикальной видимости
 if(substr($data[$counter], 2, 1) == '/' or substr($data[$counter], 3, 1) == '/') {
     $restInfo .= decodeTemperature($data[$counter])."&deg;C"."<br /><br />".decodeDewPoint($data[$counter])."&deg;C";
     $counter++;
@@ -860,4 +861,28 @@ if(substr($data[$counter], 2, 1) == '/' or substr($data[$counter], 3, 1) == '/')
     $restInfo .= decodePhenomena($data, $counter, 0, "", 0);
 }
 
-echo "<b>Общие сведения</b>: Погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time."<br /><br /><b>Ветер у земли</b>: ".$windTotal.".<br /><br /><b>Горизонтальная видимость</b>: ".$visibility.$restInfo;
+function increaseCounter($cells, $c) {
+    $c++;
+
+    if(substr($cells[$c], 0, 1) != "Q" and substr($cells[$c], 0, 1) != "A") {
+        return increaseCounter($cells, $c);
+    } else {
+        return $c;
+    }
+}
+//////////////////////////////////////////////////////
+
+//анализатор давления
+switch(substr($data[increaseCounter($data, $counter)], 0, 1)) {
+    case "A":
+        $pressure = substr($data[increaseCounter($data, $counter)], 1, 2).".".substr($data[increaseCounter($data, $counter)], 3, 2)." дюймов ртутного столба.";
+        break;
+    case "Q":
+        $pressure = (int)substr($data[increaseCounter($data, $counter)], 1, 4)." гектапаскалей.";
+        break;
+    default:
+        break;
+}
+//////////////////////////////////////////////////////
+
+echo "<b>Общие сведения</b>: Погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time."<br /><br /><b>Ветер у земли</b>: ".$windTotal.".<br /><br /><b>Горизонтальная видимость</b>: ".$visibility.$restInfo."<br /><br /><b>Давление</b>: ".$pressure;
