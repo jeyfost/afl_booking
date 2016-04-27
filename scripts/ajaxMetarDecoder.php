@@ -2,7 +2,7 @@
 
 include ('connect.php');
 
-$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D FG -DZ VCTS OVC011TCU BKN007 VV005 15/15 Q1012";
+$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D OVC011TCU BKN007 VV005 15/15 Q1012";
 
 echo "<b>Исходный код</b>: ".$_POST['metar']."<br /><br />";
 
@@ -198,9 +198,17 @@ function decodePhenomena($cells, $c, $adding, $initResult, $functions) {
     }
 
     if(substr($cells[$i + 1], 2, 1) == '/' or substr($cells[$i + 1], 3, 1) == '/') {
+        if($success > 0) {
+            $result .= ".";
+        }
+
         return $result."<br /><br />".decodeTemperature($cells[$i + 1])."&deg; C.<br /><br />".decodeDewPoint($cells[$i + 1])."&deg; C.";
     } else {
         if(substr($cells[$i + 1], 0, 3) == "SCT" or substr($cells[$i + 1], 0, 3) == "BKN" or substr($cells[$i + 1], 0, 3) == "OVC" or substr($cells[$i + 1], 0, 3) == "SKC" or substr($cells[$i + 1], 0, 3) == "FEW" or substr($cells[$i + 1], 0, 3) == "NSC" or substr($cells[$i + 1], 0, 3) == "CLR") {
+            if($success > 0) {
+                $result .= ".";
+            }
+
             return $result."<br /><br />".decodeClouds($cells, $c, $adding + 1, "");
         } else {
             if(substr($cells[$i + 1], 0, 2) == "VV") {
@@ -250,7 +258,7 @@ function decodeClouds($cells, $c, $adding, $initResult) {
 
     switch(substr($cells[$i], 0, 3)) {
         case "FEW":
-            $result .= " Незначительная,";
+            $result .= " незначительная,";
 
             if($type != "") {
                 $result .= $type;
@@ -259,7 +267,7 @@ function decodeClouds($cells, $c, $adding, $initResult) {
             $result .= " нижняя кромка: ".$altitude." футов";
             break;
         case "SCT":
-            $result .= " Рассеяная, ";
+            $result .= " рассеяная, ";
 
             if($type != "") {
                 $result .= $type;
@@ -268,7 +276,7 @@ function decodeClouds($cells, $c, $adding, $initResult) {
             $result .= " нижняя кромка: ".$altitude." футов";
             break;
         case "BKN":
-            $result .= " Разорванная, значительная,";
+            $result .= " разорванная, значительная,";
 
             if($type != "") {
                 $result .= $type;
@@ -277,7 +285,7 @@ function decodeClouds($cells, $c, $adding, $initResult) {
             $result .= " нижняя кромка: ".$altitude." футов";
             break;
         case "OVC":
-            $result .= " Сплошная,";
+            $result .= " сплошная,";
 
             if($type != "") {
                 $result .= $type;
@@ -286,10 +294,10 @@ function decodeClouds($cells, $c, $adding, $initResult) {
             $result .= " нижняя кромка: ".$altitude." футов";
             break;
         case "SKC":
-            $result .= " Ясно";
+            $result .= " ясно";
             break;
         case "NSC":
-            $result .= " Нет существенной облачности";
+            $result .= " нет существенной облачности";
             break;
         case "CLR":
             $result .= " Ясно";
