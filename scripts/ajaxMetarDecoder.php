@@ -2,7 +2,7 @@
 
 include ('connect.php');
 
-$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D OVC011TCU BKN007 VV005 15/15 Q1000";
+$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D OVC011TCU BKN007 VV005 15/15 Q1000 WS R04L";
 
 echo "<b>Исходный код</b>: ".$_POST['metar']."<br /><br />";
 
@@ -883,6 +883,39 @@ switch(substr($data[increaseCounter($data, $counter)], 0, 1)) {
     default:
         break;
 }
+
+$counter = increaseCounter($data, $counter) + 1;
+//////////////////////////////////////////////////////
+
+$additionals = "";
+
+//анализатор сдвига ветра
+if($data[$counter] == "WS") {
+    if($data[$counter + 1] == "ALL" and $data[$counter + 2] == "RWY") {
+        $additionals = "на всех ВПП наблюдается сдвиг ветра.";
+        $counter += 3;
+    } elseif(substr($data[$counter + 1], 0, 1) == "R") {
+        if(substr($data[$counter + 1], 0, 3) == "RWY") {
+            $runway = substr($data[$counter + 1], 3);
+        } elseif(substr($data[$counter + 1], 0, 2) == "RW") {
+            $runway = substr($data[$counter + 1], 2);
+        } else {
+            $runway = substr($data[$counter + 1], 1);
+        }
+
+        $additionals = "на ВПП ".$runway." наблюдается сдвиг ветра.";
+        $counter += 2;
+    } else {
+        $additionals = "наблюдается сдвиг ветра.";
+        $counter++;
+    }
+}
 //////////////////////////////////////////////////////
 
 echo "<b>Общие сведения</b>: Погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time."<br /><br /><b>Ветер у земли</b>: ".$windTotal.".<br /><br /><b>Горизонтальная видимость</b>: ".$visibility.$restInfo."<br /><br /><b>Давление</b>: ".$pressure;
+
+if($additionals != "") {
+    echo "<br /><br /><b>Дополнительная информация</b>: ".$additionals;
+} else {
+    echo $counter;
+}
