@@ -15,7 +15,7 @@ function decodeTemperature($cell) {
         $temperature = substr($cell, 0, 2);
     }
 
-    return $temperature;
+    return "<b>Температура</b>: ".$temperature;
 };
 
 function decodeDewPoint($cell) {
@@ -33,7 +33,7 @@ function decodeDewPoint($cell) {
         }
     }
 
-    return $dewPoint;
+    return "<b>Точка росы: </b>".$dewPoint;
 }
 
 function decodePhenomena($cells, $c, $adding, $initResult) {
@@ -181,7 +181,7 @@ function decodePhenomena($cells, $c, $adding, $initResult) {
     }
 
     if(substr($cells[$i + 1], 2, 1) == '/' or substr($cells[$i + 1], 3, 1) == '/') {
-        return $result.".";
+        return $result.".<br /><br />".decodeTemperature($cells[$i + 1])."&deg; C<br /><br />".decodeDewPoint($cells[$i + 1])."&deg; C";
     } else {
         return decodePhenomena($cells, $c, $adding + 1, $result);
     }
@@ -723,7 +723,7 @@ if(substr($visibility, strlen($visibility) - 1) != '.') {
 $restInfo = "";
 
 if(substr($data[$counter], 2, 1) == '/' or substr($data[$counter], 3, 1) == '/') {
-    $restInfo .= "<b>Температура</b>: ".decodeTemperature($data[$counter])."&deg;C"."<br /><br /><b>Точка росы</b>: ".decodeDewPoint($data[$counter])."&deg;C";
+    $restInfo .= decodeTemperature($data[$counter])."&deg;C"."<br /><br />".decodeDewPoint($data[$counter])."&deg;C";
     $counter++;
 } else {
     $restInfo .= "<b>Погодные явления</b>: ";
