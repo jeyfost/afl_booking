@@ -2,7 +2,9 @@
 
 include ('connect.php');
 
-$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D -FZDZ -FZRA BR 15/15 Q1012";
+$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D OVC011 VV005 15/15 Q1012";
+
+echo "<b>Исходный код</b>: ".$_POST['metar']."<br /><br />";
 
 $data = explode(' ', $_POST['metar']);
 
@@ -33,12 +35,13 @@ function decodeDewPoint($cell) {
         }
     }
 
-    return "<b>Точка росы: </b>".$dewPoint;
+    return "<b>Точка росы</b>: ".$dewPoint;
 }
 
-function decodePhenomena($cells, $c, $adding, $initResult) {
+function decodePhenomena($cells, $c, $adding, $initResult, $functions) {
     $i = $c + $adding;
-    if($initResult == "") {
+
+    if($initResult == "" or $functions == 1) {
         $result = $initResult;
     } else {
         $result = $initResult."; ";
@@ -93,6 +96,10 @@ function decodePhenomena($cells, $c, $adding, $initResult) {
     );
 
     if(substr($cells[$i], 0, 1) == '-' or substr($cells[$i], 0, 1) == '+') {
+        if($result == "") {
+            $result = "<br /><br /><b>Погодные явления</b>: ";
+        }
+
         $condition = substr($cells[$i], 1);
         $success = 0;
 
@@ -166,6 +173,11 @@ function decodePhenomena($cells, $c, $adding, $initResult) {
         for($j = 0; $j < count($conditionsS); $j++) {
             if($condition == $conditionsS[$j]['code']) {
                 $success++;
+
+                if($result == "") {
+                    $result = "<br /><br /><b>Погодные явления</b>: ";
+                }
+
                 $result .= $conditionsS[$j]['name'];
             }
         }
@@ -174,6 +186,11 @@ function decodePhenomena($cells, $c, $adding, $initResult) {
             for($j = 0; $j < count($conditionsW); $j++) {
                 if($condition == $conditionsW[$j]['code']) {
                     $success++;
+
+                    if($result == "") {
+                        $result = "<br /><br /><b>Погодные явления</b>: ";
+                    }
+
                     $result .= $conditionsW[$j]['name'];
                 }
             }
@@ -181,11 +198,116 @@ function decodePhenomena($cells, $c, $adding, $initResult) {
     }
 
     if(substr($cells[$i + 1], 2, 1) == '/' or substr($cells[$i + 1], 3, 1) == '/') {
-        return $result.".<br /><br />".decodeTemperature($cells[$i + 1])."&deg; C<br /><br />".decodeDewPoint($cells[$i + 1])."&deg; C";
+        return $result."<br /><br />".decodeTemperature($cells[$i + 1])."&deg; C.<br /><br />".decodeDewPoint($cells[$i + 1])."&deg; C.";
     } else {
-        return decodePhenomena($cells, $c, $adding + 1, $result);
+        if(substr($cells[$i + 1], 0, 3 == "SCT") or substr($cells[$i + 1], 0, 3 == "BKN") or substr($cells[$i + 1], 0, 3 == "OVC") or substr($cells[$i + 1], 0, 3 == "SKC") or substr($cells[$i + 1], 0, 3 == "FEW") or substr($cells[$i + 1], 0, 3 == "NSC") or substr($cells[$i + 1], 0, 3 == "CLR")) {
+            return $result."<br /><br />".decodeClouds($cells, $c, $adding + 1, "");
+        } else {
+            if(substr($cells[$i + 1], 0, 2) == "VV") {
+                return $result.".<br /><br />".decodeVerticalVisibility($cells, $c, $adding + 1);
+            } else {
+                return decodePhenomena($cells, $c, $adding + 1, $result, 0);
+            }
+        }
     }
 
+}
+
+function decodeClouds($cells, $c, $adding, $initResult) {
+    if($initResult == "") {
+        $result = "<b>Облачность</b>:";
+    } else {
+        $result = $initResult.";";
+    }
+
+    $i = $c + $adding;
+    $type = "";
+
+    if(strlen($cells[$i]) > 3) {
+        $altitude = (int)substr($cells[$i], 2, 3) * 100;
+
+        if(strlen($cells[$i]) > 6) {
+            $type = substr($cells[$i], 6);
+        }
+    }
+
+    if($type != "") {
+        switch($type) {
+            case "Cb":
+                $type = " облака кучево-дождевые";
+                break;
+            case "TCU":
+                $type = " облака мощные кучевые";
+                break;
+            default:
+                break;
+        }
+    }
+
+    switch(substr($cells[$i], 0, 3)) {
+        case "FEW":
+            $result .= " Незначительная,";
+
+            if($type != "") {
+                $result .= $type;
+            }
+
+            $result .= " нижняя кромка: ".$altitude."футов";
+            break;
+        case "SCT":
+            $result .= " Рассеяная";
+
+            if($type != "") {
+                $result .= $type;
+            }
+
+            $result .= " нижняя кромка: ".$altitude."футов";
+            break;
+        case "BKN":
+            $result .= " Разорванная, значительная,";
+
+            if($type != "") {
+                $result .= $type;
+            }
+
+            $result .= " нижняя кромка: ".$altitude."футов";
+            break;
+        case "OVC":
+            $result .= " Сплошная,";
+
+            if($type != "") {
+                $result .= $type;
+            }
+
+            $result .= " нижняя кромка: ".$altitude."футов";
+            break;
+        case "SKC":
+            $result .= " Ясно";
+            break;
+        case "NSC":
+            $result .= " Нет существенной облачности";
+            break;
+        case "CLR":
+            $result .= " Ясно";
+            break;
+        default:
+            break;
+    }
+    /*
+    if(substr($cells[$i + 1], 0, 3 == "SCT") or substr($cells[$i + 1], 0, 3 == "BKN") or substr($cells[$i + 1], 0, 3 == "OVC") or substr($cells[$i + 1], 0, 3 == "SKC") or substr($cells[$i + 1], 0, 3 == "FEW") or substr($cells[$i + 1], 0, 3 == "NSC") or substr($cells[$i + 1], 0, 3 == "CLR")) {
+        return decodeClouds($cells, $c, $adding + 1, $result);
+    } else {
+        return decodePhenomena($cells, $c, $adding, $result, 1);
+    }
+    */
+
+    return $result;
+}
+
+function decodeVerticalVisibility($cells, $c, $adding) {
+    $visibility = (int)substr($cells[$c + $adding], 2, 3) * 100;
+    $result = "<b>Вертикальная видимость</b>: ".$visibility." футов.";
+    return decodePhenomena($cells, $c, $adding, $result, 1);
 }
 
 //информация об аэропорте
@@ -225,7 +347,7 @@ if(substr($minutes, 0, 1) != "1") {
     $m_word = "минут";
 }
 
-$time  = $time.$word." ".$minutes." ".$m_word." по UTC";
+$time  = $time.$word." ".$minutes." ".$m_word." по UTC.";
 $counter++;
 //////////////////////////////////////////////////////
 
@@ -372,7 +494,7 @@ if($windSpeed > 0) {
 }
 //////////////////////////////////////////////////////
 
-//анализатор видимости
+//анализатор горизонтальной видимости
 if($data[$counter] == "CAVOK") {
     $visibility = "свыше 10 км, нет облаков ниже 5000 футов или минимальной высоты сектора (в зависимости от того, какое из значений больше), нет никаких погодных явлений на аэродроме и в его окрестностях";
 } else {
@@ -726,8 +848,7 @@ if(substr($data[$counter], 2, 1) == '/' or substr($data[$counter], 3, 1) == '/')
     $restInfo .= decodeTemperature($data[$counter])."&deg;C"."<br /><br />".decodeDewPoint($data[$counter])."&deg;C";
     $counter++;
 } else {
-    $restInfo .= "<b>Погодные явления</b>: ";
-    $restInfo .= decodePhenomena($data, $counter, 0, "");
+    $restInfo .= decodePhenomena($data, $counter, 0, "", 0);
 }
 
-echo "Погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time.":<br /><br /><b>Ветер у земли</b>: ".$windTotal."<br /><br /><b>Видимость</b>: ".$visibility."<br /><br />".$restInfo;
+echo "<b>Общие сведения</b>: Погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time."<br /><br /><b>Ветер у земли</b>: ".$windTotal.".<br /><br /><b>Горизонтальная видимость</b>: ".$visibility.$restInfo;
