@@ -2,8 +2,6 @@
 
 include ('connect.php');
 
-$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D OVC011TCU BKN007 VV005 15/15 Q1000 WS R04L";
-
 echo "<b>Исходный код</b>: ".$_POST['metar']."<br /><br />";
 
 $data = explode(' ', $_POST['metar']);
@@ -35,7 +33,7 @@ function decodeDewPoint($cell) {
         }
     }
 
-    return "<b>Точка росы</b>: ".$dewPoint;
+    return "<b>Точка росы</b>: ".(int)$dewPoint;
 }
 
 function decodePhenomena($cells, $c, $adding, $initResult, $functions) {
@@ -873,18 +871,18 @@ function increaseCounter($cells, $c) {
 //////////////////////////////////////////////////////
 
 //анализатор давления
-switch(substr($data[increaseCounter($data, $counter)], 0, 1)) {
+switch(substr($data[(int)increaseCounter($data, $counter)], 0, 1)) {
     case "A":
-        $pressure = substr($data[increaseCounter($data, $counter)], 1, 2).".".substr($data[increaseCounter($data, $counter)], 3, 2)." дюймов ртутного столба.";
+        $pressure = substr($data[(int)increaseCounter($data, $counter)], 1, 2).".".substr($data[(int)increaseCounter($data, $counter)], 3, 2)." дюймов ртутного столба.";
         break;
     case "Q":
-        $pressure = (int)substr($data[increaseCounter($data, $counter)], 1, 4)." гектапаскалей.";
+        $pressure = (int)substr($data[(int)increaseCounter($data, $counter)], 1, 4)." гектапаскалей.";
         break;
     default:
         break;
 }
 
-$counter = increaseCounter($data, $counter) + 1;
+$counter = (int)increaseCounter($data, $counter) + 1;
 //////////////////////////////////////////////////////
 
 $additionals = "";
@@ -916,6 +914,4 @@ echo "<b>Общие сведения</b>: Погода в аэропорту <im
 
 if($additionals != "") {
     echo "<br /><br /><b>Дополнительная информация</b>: ".$additionals;
-} else {
-    echo $counter;
 }
