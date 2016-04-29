@@ -876,6 +876,21 @@ switch(substr($data[(int)increaseCounter($data, $counter)], 0, 1)) {
         $pressure = substr($data[(int)increaseCounter($data, $counter)], 1, 2).".".substr($data[(int)increaseCounter($data, $counter)], 3, 2)." дюймов ртутного столба.";
         break;
     case "Q":
+        $lastDigit = substr($data[(int)increaseCounter($data, $counter)], strlen($data[(int)increaseCounter($data, $counter)]) - 1);
+        $twoDigits = substr($data[(int)increaseCounter($data, $counter)], strlen($data[(int)increaseCounter($data, $counter)]) - 2);
+
+        if(substr($twoDigits, 0, 1) == 1) {
+            $pressure = (int)substr($data[(int)increaseCounter($data, $counter)], 1, 4)." гектапаскалей.";
+        } else {
+            if($lastDigit == "0" or $lastDigit == "6" or $lastDigit == "7" or $lastDigit == "8" or $lastDigit == "9") {
+                $pressure = (int)substr($data[(int)increaseCounter($data, $counter)], 1, 4)." гектапаскалей.";
+            } elseif($lastDigit == "1") {
+                $pressure = (int)substr($data[(int)increaseCounter($data, $counter)], 1, 4)." гектапаскаль.";
+            } elseif($lastDigit == "2" or $lastDigit == "3" or $lastDigit == "4") {
+                $pressure = (int)substr($data[(int)increaseCounter($data, $counter)], 1, 4)." гектапаскаля.";
+            }
+        }
+
         $pressure = (int)substr($data[(int)increaseCounter($data, $counter)], 1, 4)." гектапаскалей.";
         break;
     default:
