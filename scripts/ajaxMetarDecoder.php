@@ -2,6 +2,8 @@
 
 include ('connect.php');
 
+$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D OVC011TCU BKN007 VV005 15/15 Q1003 WS R04L";
+
 echo "<b>Исходный код</b>: ".$_POST['metar']."<br /><br />";
 
 $data = explode(' ', $_POST['metar']);
@@ -890,8 +892,6 @@ switch(substr($data[(int)increaseCounter($data, $counter)], 0, 1)) {
                 $pressure = (int)substr($data[(int)increaseCounter($data, $counter)], 1, 4)." гектапаскаля.";
             }
         }
-
-        $pressure = (int)substr($data[(int)increaseCounter($data, $counter)], 1, 4)." гектапаскалей.";
         break;
     default:
         break;
