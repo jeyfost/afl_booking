@@ -88,11 +88,11 @@
       <file leaf-file-name="ajaxMetarDecoder.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09537167">
-              <caret line="4" column="119" selection-start-line="4" selection-start-column="119" selection-end-line="4" selection-end-column="119" />
+            <state vertical-scroll-proportion="0.42777">
+              <caret line="634" column="13" selection-start-line="634" selection-start-column="13" selection-end-line="634" selection-end-column="13" />
               <folding>
-                <marker date="1461924764218" expanded="true" signature="11325:11382" placeholder="SELECT * FRO... airports" />
-                <marker date="1461924764218" expanded="true" signature="34509:34524" placeholder="..." />
+                <marker date="1462289999274" expanded="true" signature="26517:26574" placeholder="SELECT * FRO... airports" />
+                <marker date="1462289999274" expanded="true" signature="50353:50368" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -434,7 +434,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461914412772</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Исправлена расшифровка давления">
+      <created>1461924773835</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1461924773836</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -495,7 +501,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -976,11 +982,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/ajaxMetarDecoder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09537167">
-          <caret line="4" column="119" selection-start-line="4" selection-start-column="119" selection-end-line="4" selection-end-column="119" />
+        <state vertical-scroll-proportion="0.42777">
+          <caret line="634" column="13" selection-start-line="634" selection-start-column="13" selection-end-line="634" selection-end-column="13" />
           <folding>
-            <marker date="1461924764218" expanded="true" signature="11325:11382" placeholder="SELECT * FRO... airports" />
-            <marker date="1461924764218" expanded="true" signature="34509:34524" placeholder="..." />
+            <marker date="1462289999274" expanded="true" signature="26517:26574" placeholder="SELECT * FRO... airports" />
+            <marker date="1462289999274" expanded="true" signature="50353:50368" placeholder="..." />
           </folding>
         </state>
       </provider>

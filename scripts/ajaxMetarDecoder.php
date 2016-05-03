@@ -2,7 +2,7 @@
 
 include ('connect.php');
 
-$_POST['metar'] = "LLBG 140830Z 10010KT 050V150 1000S1500W R04/P1200N R22/0800V1000D OVC011TCU BKN007 VV005 15/15 Q1003 WS R04L";
+$_POST['metar'] = "LLBG 140830Z 10010MPS 050V150 1000S1500W R04/P1200N R22/0800V1000D OVC011TCU BKN007 VV005 15/7 Q1003 WS R04L BECMG AT0120 11009G21MPS";
 
 echo "<b>Исходный код</b>: ".$_POST['metar']."<br /><br />";
 
@@ -317,6 +317,325 @@ function decodeVerticalVisibility($cells, $c, $adding) {
     $visibility = (int)substr($cells[$c + $adding], 2, 3) * 100;
     $result = "<b>Вертикальная видимость</b>: ".$visibility." футов.";
     return decodePhenomena($cells, $c, $adding, $result, 1);
+}
+
+function decodeTempo($cells, $c, $adding) {
+    $i = $c + $adding;
+    $result = "";
+
+    if(substr($cells[$i], 0, 2) == "FM" or substr($cells[$i], 0, 2) == "TL" or substr($cells[$i], 0, 2) == "AT") {
+        switch(substr($cells[$i], 0, 2)) {
+            case "FM":
+                $result .= "от ".substr($cells[$i], 2, 2).":".substr($cells[$i], 4)." по UTC";
+                break;
+            case "TL":
+                $result .= "до  ".substr($cells[$i], 2, 2).":".substr($cells[$i], 4)." по UTC";
+                break;
+            case "AT":
+                $result .= "на ";
+
+                if((int)substr($cells[$i], 2, 2) >= 10 and (int)substr($cells[$i], 2, 2) < 20) {
+                    $result .= substr($cells[$i], 2, 2)." часов ".substr($cells[$i], 4)." минут";
+                } else {
+                    if(substr($cells[$i], 3, 1) == "0" or substr($cells[$i], 3, 1) == "5" or substr($cells[$i], 3, 1) == "6" or substr($cells[$i], 3, 1) == "7" or substr($cells[$i], 3, 1) == "8" or substr($cells[$i], 3, 1) == "9") {
+                        $result .= (int)substr($cells[$i], 2, 2)." часов ".substr($cells[$i], 4)." минут";
+                    } elseif(substr($cells[$i], 3, 1) == "1") {
+                        $result .= (int)substr($cells[$i], 2, 2)." час ".substr($cells[$i], 4)." минут";
+                    } else {
+                        $result .= (int)substr($cells[$i], 2, 2)." часа ".substr($cells[$i], 4)." минут";
+                    }
+                }
+                break;
+            default:
+                break;
+        }
+        $result .= " <b>=></b>";
+        $i++;
+    } else {
+        $result .= "1<b>=></b>";
+    }
+
+    if(substr($cells[$i], 0, 3) == "VRB") {
+        if(substr($cells[$i], 5, 1) == 'G') {
+            $result .= " ветер у земли переменный ".(int)substr($cells[$i], 3, 2)." ";
+            switch(substr($cells[$i], 8)) {
+                case "MPS":
+                    if ((int)substr($cells[$i], 3, 2) >= 10 and (int)substr($cells[$i], 3, 2) < 20) {
+                        $result .= "метров в секунду";
+                    } elseif ((int)substr($cells[$i], 4, 1) == 1) {
+                        $result .= "метр в секунду";
+                    } elseif ((int)substr($cells[$i], 4, 1) == 2 or (int)substr($cells[$i], 4, 1) == 3 or (int)substr($cells[$i], 4, 1) == 4) {
+                        $result .= "метра в секунду";
+                    } else {
+                        $result .= "метров в секунду";
+                    }
+                    break;
+                case "KT":
+                    if ((int)substr($cells[$i], 3, 2) >= 10 and (int)substr($cells[$i], 3, 2) < 20) {
+                        $result .= "узлов";
+                    } elseif ((int)substr($cells[$i], 4, 1) == 1) {
+                        $result .= "узел";
+                    } elseif ((int)substr($cells[$i], 4, 1) == 2 or (int)substr($cells[$i], 4, 1) == 3 or (int)substr($cells[$i], 4, 1) == 4) {
+                        $result .= "узла";
+                    } else {
+                        $result .= "узлов";
+                    }
+                    break;
+                case "KMH":
+                    if ((int)substr($cells[$i], 3, 2) >= 10 and (int)substr($cells[$i], 3, 2) < 20) {
+                        $result .= "километров в час";
+                    } elseif ((int)substr($cells[$i], 4, 1) == 1) {
+                        $result .= "километр в час";
+                    } elseif ((int)substr($cells[$i], 4, 1) == 2 or (int)substr($cells[$i], 4, 1) == 3 or (int)substr($cells[$i], 4, 1) == 4) {
+                        $result .= "километра в час";
+                    } else {
+                        $result .= "километров в час";
+                    }
+                    break;
+                default:
+                    break;
+            }
+
+            $result .= " с порывами до ".substr($cells[$i], 6, 2)." ";
+
+            switch(substr($cells[$i], 8)) {
+                case "MPS":
+                    if ((int)substr($cells[$i], 6, 2) >= 10 and (int)substr($cells[$i], 6, 2) < 20) {
+                        $result .= "метров в секунду";
+                    } elseif ((int)substr($cells[$i], 7, 1) == 1) {
+                        $result .= "метра в секунду";
+                    } else {
+                        $result .= "метров в секунду";
+                    }
+                    break;
+                case "KT":
+                    if ((int)substr($cells[$i], 6, 2) >= 10 and (int)substr($cells[$i], 6, 2) < 20) {
+                        $result .= "узлов";
+                    } elseif ((int)substr($cells[$i], 7, 1) == 1) {
+                        $result .= "узла";
+                    } else {
+                        $result .= "узлов";
+                    }
+                    break;
+                case "KMH":
+                    if ((int)substr($cells[$i], 6, 2) >= 10 and (int)substr($cells[$i], 6, 2) < 20) {
+                        $result .= "километров в час";
+                    } elseif ((int)substr($cells[$i], 7, 1) == 1) {
+                        $result .= "километра в час";
+                    }else {
+                        $result .= "километров в час";
+                    }
+                    break;
+                default:
+                    break;
+            }
+        } else {
+            $result .= " ветер у земли переменный ".(int)substr($cells[$i], 3, 2)." ";
+            switch(substr($cells[$i], 5, 2)) {
+                case "MP":
+                    if((int)substr($cells[$i], 3, 2) >= 10 and (int)substr($cells[$i], 3, 2) < 20) {
+                        $result .= "метров в секунду";
+                    } elseif((int)substr($cells[$i], 4, 1) == 1) {
+                        $result .= "метр в секунду";
+                    } elseif((int)substr($cells[$i], 4, 1) == 2 or (int)substr($cells[$i], 4, 1) == 3 or (int)substr($cells[$i], 4, 1) == 4) {
+                        $result .= "метра в секунду";
+                    } else {
+                        $result .= "метров в секунду";
+                    }
+                    break;
+                case "KT":
+                    if((int)substr($cells[$i], 3, 2) >= 10 and (int)substr($cells[$i], 3, 2) < 20) {
+                        $result .= "узлов";
+                    } elseif((int)substr($cells[$i], 4, 1) == 1) {
+                        $result .= "узел";
+                    } elseif((int)substr($cells[$i], 4, 1) == 2 or (int)substr($cells[$i], 4, 1) == 3 or (int)substr($cells[$i], 4, 1) == 4) {
+                        $result .= "узла";
+                    } else {
+                        $result .= "узлов";
+                    }
+                    break;
+                case "KM":
+                    if((int)substr($cells[$i], 3, 2) >= 10 and (int)substr($cells[$i], 3, 2) < 20) {
+                        $result .= "километров в час";
+                    } elseif((int)substr($cells[$i], 4, 1) == 1) {
+                        $result .= "километр в час";
+                    } elseif((int)substr($cells[$i], 4, 1) == 2 or (int)substr($cells[$i], 4, 1) == 3 or (int)substr($cells[$i], 4, 1) == 4) {
+                        $result .= "километра в час";
+                    } else {
+                        $result .= "километров в час";
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+        $result .= ";";
+        $i++;
+    }
+
+    if(is_numeric(substr($cells[$i], 0, 3))) {
+        $result .= " ветер у земли ";
+
+        if(substr($cells[$i], 3, 1) == 'V') {
+            $result .= "меняет направление от ".(int)substr($cells[$i], 0, 3)."&deg; до ".(int)substr($cells[$i], 4, 3)."&deg;, скорость = ".(int)substr($cells[$i], 7, 2)." ";
+
+            switch(substr($cells[$i], strlen($cells[$i]) - 2)) {
+                case "PS":
+                    if((int)substr($cells[$i], 7, 2) >= 10 and (int)substr($cells[$i], 7, 2) < 20) {
+                        $result .= "метров в секунду";
+                    } elseif((int)substr($cells[$i], 8, 1) == 1) {
+                        $result .= "метр в секунду";
+                    } elseif((int)substr($cells[$i], 8, 1) == 2 or (int)substr($cells[$i], 8, 1) == 3 or (int)substr($cells[$i], 8, 1) == 4){
+                        $result .= "метра в секунду";
+                    } else {
+                        $result .= "метров в секунду";
+                    }
+                    break;
+                case "KT":
+                    if((int)substr($cells[$i], 7, 2) >= 10 and (int)substr($cells[$i], 7, 2) < 20) {
+                        $result .= "узлов";
+                    } elseif((int)substr($cells[$i], 8, 1) == 1) {
+                        $result .= "узел";
+                    } elseif((int)substr($cells[$i], 8, 1) == 2 or (int)substr($cells[$i], 8, 1) == 3 or (int)substr($cells[$i], 8, 1) == 4){
+                        $result .= "узла";
+                    } else {
+                        $result .= "узлов";
+                    }
+                    break;
+                case "MH":
+                    if((int)substr($cells[$i], 7, 2) >= 10 and (int)substr($cells[$i], 7, 2) < 20) {
+                        $result .= "километров в час";
+                    } elseif((int)substr($cells[$i], 8, 1) == 1) {
+                        $result .= "километр в час";
+                    } elseif((int)substr($cells[$i], 8, 1) == 2 or (int)substr($cells[$i], 8, 1) == 3 or (int)substr($cells[$i], 8, 1) == 4){
+                        $result .= "километра в час";
+                    } else {
+                        $result .= "километров в час";
+                    }
+                    break;
+                default:
+                    break;
+            }
+
+            if(substr($cells[$i], 9, 1) == 'G') {
+                $result .= ", с порывами до ".(int)substr($cells[$i], 10, 2)." ";
+
+                switch(substr($cells[$i], strlen($cells[$i]) - 2)) {
+                    case "PS":
+                        if((int)substr($cells[$i], 10, 2) >= 10 and (int)substr($cells[$i], 10, 2) < 20) {
+                            $result .= "метров в секунду";
+                        } elseif((int)substr($cells[$i], 11, 1) == 1) {
+                            $result .= "метра в секунду";
+                        } else {
+                            $result .= "метров в секунду";
+                        }
+                        break;
+                    case "KT":
+                        if((int)substr($cells[$i], 10, 2) >= 10 and (int)substr($cells[$i], 10, 2) < 20) {
+                            $result .= "узлов";
+                        } elseif((int)substr($cells[$i], 11, 11) == 1) {
+                            $result .= "узела";
+                        } else {
+                            $result .= "узлов";
+                        }
+                        break;
+                    case "MH":
+                        if((int)substr($cells[$i], 10, 2) >= 10 and (int)substr($cells[$i], 10, 2) < 20) {
+                            $result .= "километров в час";
+                        } elseif((int)substr($cells[$i], 11, 2) == 1) {
+                            $result .= "километра в час";
+                        } else {
+                            $result .= "километров в час";
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+        } else {
+            $result .= "имеет направление ".(int)substr($cells[$i], 0, 3)."&deg;, скорость = ".(int)substr($cells[$i], 3, 2)." ";
+
+            switch(substr($cells[$i], strlen($cells[$i]) - 2)) {
+                case "PS":
+                    if((int)substr($cells[$i], 3, 2) >= 10 and (int)substr($cells[$i], 3, 2) < 20) {
+                        $result .= "метров в секунду";
+                    } elseif((int)substr($cells[$i], 4, 1) == 1) {
+                        $result .= "метр в секунду";
+                    } elseif((int)substr($cells[$i], 4, 1) == 2 or (int)substr($cells[$i], 4, 1) == 3 or (int)substr($cells[$i], 4, 1) == 4) {
+                        $result .= "метра в секунду";
+                    } else {
+                        $result .= "метров в секунду";
+                    }
+                    break;
+                case "KT":
+                    if((int)substr($cells[$i], 3, 2) >= 10 and (int)substr($cells[$i], 3, 2) < 20) {
+                        $result .= "узлов";
+                    } elseif((int)substr($cells[$i], 4, 1) == 1) {
+                        $result .= "узел";
+                    } elseif((int)substr($cells[$i], 4, 1) == 2 or (int)substr($cells[$i], 4, 1) == 3 or (int)substr($cells[$i], 4, 1) == 4) {
+                        $result .= "узла";
+                    } else {
+                        $result .= "узлов";
+                    }
+                    break;
+                case "MH":
+                    if((int)substr($cells[$i], 3, 2) >= 10 and (int)substr($cells[$i], 3, 2) < 20) {
+                        $result .= "километров в час";
+                    } elseif((int)substr($cells[$i], 4, 1) == 1) {
+                        $result .= "километр в час";
+                    } elseif((int)substr($cells[$i], 4, 1) == 2 or (int)substr($cells[$i], 4, 1) == 3 or (int)substr($cells[$i], 4, 1) == 4) {
+                        $result .= "километра в час";
+                    } else {
+                        $result .= "километров в час";
+                    }
+                    break;
+                default:
+                    break;
+            }
+
+            if(substr($cells[$i], 5, 1) == 'G') {
+                $result .= " с порывами до ".(int)substr($cells[$i], 6, 2);
+            }
+
+            switch(substr($cells[$i], strlen($cells[$i]) - 2)) {
+                case "PS":
+                    if((int)substr($cells[$i], 6, 2) >= 10 and (int)substr($cells[$i], 6, 2) < 20) {
+                        $result .= "метров в секунду";
+                    } elseif((int)substr($cells[$i], 7, 1) == 1) {
+                        $result .= "метра в секунду";
+                    } else {
+                        $result .= "метров в секунду";
+                    }
+                    break;
+                case "KT":
+                    if((int)substr($cells[$i], 6, 2) >= 10 and (int)substr($cells[$i], 6, 2) < 20) {
+                        $result .= "узлов";
+                    } elseif((int)substr($cells[$i], 7, 1) == 1) {
+                        $result .= "узла";
+                    } else {
+                        $result .= "узлов";
+                    }
+                    break;
+                case "MH":
+                    if((int)substr($cells[$i], 6, 2) >= 10 and (int)substr($cells[$i], 6, 2) < 20) {
+                        $result .= "километров в час";
+                    } elseif((int)substr($cells[$i], 7, 1) == 1) {
+                        $result .= "километра в час";
+                    } else {
+                        $result .= "километров в час";
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        $result .= ";";
+        $i++;
+    }
+
+    return $result;
 }
 
 //информация об аэропорте
@@ -925,8 +1244,33 @@ if($data[$counter] == "WS") {
 }
 //////////////////////////////////////////////////////
 
-echo "<b>Общие сведения</b>: Погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time."<br /><br /><b>Ветер у земли</b>: ".$windTotal.".<br /><br /><b>Горизонтальная видимость</b>: ".$visibility.$restInfo."<br /><br /><b>Давление</b>: ".$pressure;
+//анализатор прогноза
+if($data[$counter] == "NOSIG" or $data[$counter] == "BECMG" or $data[$counter] == "TEMPO") {
+    $tempo = "";
+    switch($data[$counter]) {
+        case "NOSIG":
+            $tempo = "cущественных изменений не прогнозируется";
+            break;
+        case "BECMG":
+            $tempo = "наступающие изменения ";
+            $tempo .= decodeTempo($data, $counter, 1);
+            break;
+        case "TEMPO":
+            $tempo = "временные изменения ";
+            $tempo .= decodeTempo($data, $counter, 1);
+            break;
+        default:
+            break;
+    }
+}
+//////////////////////////////////////////////////////
+
+echo "<b>Общие сведения</b>: погода в аэропорту <img src='img/flags/".$airport['iso_code'].".png' title='".$airport['country']."' /> <a href='http://va-aeroflot.su/airport/".$data[0]."' style='margin-left: 0;'>".$airport['name']." (".$data[0].")"."</a> по состоянию на ".$time."<br /><br /><b>Ветер у земли</b>: ".$windTotal.".<br /><br /><b>Горизонтальная видимость</b>: ".$visibility.$restInfo."<br /><br /><b>Давление</b>: ".$pressure;
 
 if($additionals != "") {
     echo "<br /><br /><b>Дополнительная информация</b>: ".$additionals;
+}
+
+if($tempo != "") {
+    echo "<br /><br /><b>Прогноз</b>: ".$tempo;
 }
